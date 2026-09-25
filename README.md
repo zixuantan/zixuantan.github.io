@@ -6,22 +6,17 @@ A responsive, static portfolio for **https://zixuantan.github.io/**. Built with 
 
 Run `python3 -m http.server 8000 --directory site`, then visit http://localhost:8000.
 
-## Publish
+## Publish updates
 
-1. Sign in to GitHub as `zixuantan` and create a **public** repository named exactly `zixuantan.github.io`. Leave README, license, and .gitignore initialization unchecked.
-2. From this project directory, run:
+The repository is connected to GitHub Pages using GitHub Actions. Commit changes and push to `main`; the workflow publishes the `site` directory automatically.
 
-   ```sh
-   git init -b main
-   git add .gitignore README.md site .github
-   git commit -m "Build personal portfolio"
-   git remote add origin https://github.com/zixuantan/zixuantan.github.io.git
-   git push -u origin main
-   ```
+```sh
+git add site README.md
+git commit -m "Update portfolio"
+git push origin main
+```
 
-3. In the repository, open **Settings → Pages → Build and deployment → Source**, and choose **GitHub Actions**.
-4. Open **Actions → Deploy portfolio to GitHub Pages → Run workflow** if the initial run has already failed before Pages was enabled.
-5. Once deployment succeeds, visit https://zixuantan.github.io/. The site may take a few minutes to appear.
+Check deployment progress in the repository’s Actions tab.
 
 ## Edit
 
@@ -29,6 +24,6 @@ Run `python3 -m http.server 8000 --directory site`, then visit http://localhost:
 - `site/styles.css`: design and responsive layouts.
 - `.github/workflows/pages.yml`: automatic deployment on pushes to `main`.
 
-Project illustrations are abstract decorative graphics, not performance charts. Project-specific URLs are intentionally omitted until confirmed. Google Fonts are optional; system fallbacks work without them. Content and interactions work without JavaScript.
+A minimal black-and-white design with fully clickable project rows. The backtester and macro dashboard link directly to their Streamlit apps, with separate GitHub source links. The Goodreads project links to its repository. Destinations were confirmed from the public project READMEs. The site uses system fonts and works without JavaScript or external font requests.
 
 The source resume is excluded from version control and the deployed `site` directory. The website includes the professional email address but omits the phone number. Experience dates and project results reflect the supplied resume; update the AMD “Present” status when needed.
