@@ -24,6 +24,6 @@ Check deployment progress in the repository’s Actions tab.
 - `site/styles.css`: design and responsive layouts.
 - `.github/workflows/pages.yml`: automatic deployment on pushes to `main`.
 
-A minimal black-and-white design with fully clickable project rows. The backtester and macro dashboard link directly to their Streamlit apps, with separate GitHub source links. The Goodreads project links to its repository. Destinations were confirmed from the public project READMEs. The site uses system fonts and works without JavaScript or external font requests.
+A minimal black-and-white design with fully clickable project rows. The backtester and macro dashboard link directly to their Streamlit apps, with separate GitHub source links. The Goodreads project links to its repository. Fyre links to its live app, with a separate GitHub source link. Destinations were confirmed from the public project READMEs. The site uses system fonts and works without JavaScript or external font requests.
 
 The source resume is excluded from version control and the deployed `site` directory. The website includes the professional email address but omits the phone number. Experience dates and project results reflect the supplied resume; update the AMD “Present” status when needed.
